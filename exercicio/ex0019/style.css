@@ -1,0 +1,42 @@
+
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+body{
+    font: normal 20px arial,helvetica,verdana;
+    background-image: linear-gradient(to bottom, #81d2f1,#00c3ff);
+}
+#title{
+    text-align: center;
+    background-color: #025a11;
+    color: #ffffff;
+   
+}
+h1{
+    color:#025a11 ;
+
+}
+h2{
+    color:#03af1f ;
+}
+
+p{
+    text-indent: 20px;
+    text-align: justify;
+    font: normal bolder 1em 'inter',sans-serif;
+}
+.basico{
+    color: #3D7317;
+}
+.avancado{
+    color: #A30F04;
+}
+.intermediario{
+    color:#9c8a01;
+}
+.text{
+    font:  bold 1.2em helvetica;
+    text-decoration: underline;
+}
