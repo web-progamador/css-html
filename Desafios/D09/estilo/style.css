@@ -60,7 +60,7 @@ header > h1{
    
 }
 nav{
-    background-color: var(--cor2);
+    background-color: #0296a3;
     padding: 10px;
   
     
@@ -86,9 +86,8 @@ nav  a{
    
 }
 nav > a:hover{
-    
-    color: #0D4547;   
-    
+    color: #fafafa;   
+   
 }
 nav > a::after{
     content: '';
@@ -108,8 +107,8 @@ nav > a:hover:after{
     transform-origin: bottom left;
 }
 nav >a:active{
-    background-color:#30666b9c;
-    color: #051c1d;
+    background-color:#025c63;
+    color: #fcfcfc;
     
 }
 .externo::after{
@@ -175,7 +174,7 @@ main a{
 
 }
 main a:hover{
-    text-decoration: underline;
+    text-decoration: none;
     color: #013111;
    transform:scale(.9) ;
 
