@@ -6,6 +6,9 @@
     --font-2:'Passion One';
     --font-3:'Sriracha', cursive;
 }
+::selection{
+    background-color: #805500bb;
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -33,14 +36,35 @@ header p{
     font-family: var(--font-3);
     font-family: 'Sriracha', cursive;
 }
+.w3rcontainer{
+    border: 1px solid #cccfdb;
+    border-radius: 2px
+}
 
  a{
     text-decoration: none;
     color: rgb(255, 254, 254);
     font-weight: bold;
+    position: relative;
 }
-a:hover{
-    text-decoration: underline;
+    a:hover{
+    color: rgb(255, 254, 254);
+}
+    a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom:5px;
+    left: 0;
+    background-color: #ffffff9c;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+     a:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 section{
     padding-top: 10vh;
@@ -51,6 +75,9 @@ section{
     font-size: 3.1vw;
     font-weight: bold;
 }
+section > p{
+    padding: 1em;
+}
 
 section.normal{
     background-color: white;
@@ -59,11 +86,27 @@ section.normal{
 section.imagem{
     background-color: black;
     color: white;
+    box-shadow: inset 5px 5px 12px 0px black;
+    background-attachment: fixed;
+}
+#img01{
+    background-image: url(imagens/background001.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+#img02{
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-clip: cover;
 }
 section.imagem > p{
-    background-color: rgba(56, 56, 56, 0.432);
+    background-color: rgba(0, 0, 0, 0.514);
     display: inline-block;
     padding: 5px;
+    text-shadow: 1px 1px 0px black;
+   
 }
 
 
@@ -71,5 +114,9 @@ footer{
     background-color: black;
     color: white;
     text-align: center;
-    padding: 12px;  
+    padding: 10px;  
+}
+footer p , a{
+    font-size: 1em;
+    font-family: var(--font-3);
 }
