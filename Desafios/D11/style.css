@@ -19,27 +19,56 @@
     margin: 0px;
     padding: 0px;
 }
-body{
+body,html{
     font: var(--font-padrao);
+    min-height: 100vh;
 
 }
 header{
     background-color: black;
-    height: 30vh;
+    text-align: center;
+    color: white;
 }
-header  h1{
-   color: white;
-   text-align: center;
-   padding-top: 55px;
-   font-size: 50px;
+header h1{
+    padding-top: 50px;
+    font-variant: small-caps;
 }
 header p{
-    color: rgb(255, 255, 255);
-    text-align: center;
+    padding-bottom: 50px;
 }
-header a{
+
+ a{
     text-decoration: none;
+    color: rgb(255, 254, 254);
+    font-weight: bold;
 }
-p > strong{
-    color: rgb(201, 199, 199);
+a:hover{
+    text-decoration: underline;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 35px;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem{
+    background-color: black;
+    color: white;
+}
+section.imagem > p{
+    background-color: rgba(56, 56, 56, 0.432);
+    width: 400px;
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 12px;  
 }
