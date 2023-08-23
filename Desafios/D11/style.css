@@ -1,0 +1,45 @@
+@charset "UTF-8";
+:root{
+    --cor1:#A6CCF4;
+    --cor2:#0296A3;
+    --cor3:#2C4E73;
+    --cor4:rgb(7, 112, 34); 
+    --cor5:#02C5D6;
+    --cor6:#150EE6;
+    --cor7:#ABF9FB;
+    --cor-08:#07afbe50;
+
+    --font-padrao:Arial,Verdana,Helvetica,sans-serif;
+    --font-destaque:'Bebas Neue',sans-serif;
+    --font-h1:'Tektur', Helvetica;
+    --font-p:Inter,sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font: var(--font-padrao);
+
+}
+header{
+    background-color: black;
+    height: 30vh;
+}
+header  h1{
+   color: white;
+   text-align: center;
+   padding-top: 55px;
+   font-size: 50px;
+}
+header p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+header a{
+    text-decoration: none;
+}
+p > strong{
+    color: rgb(201, 199, 199);
+}
